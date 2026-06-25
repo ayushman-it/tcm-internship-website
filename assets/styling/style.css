@@ -1,62 +1,62 @@
-/* Universal */
 *{
     margin: 0;
     padding: 0;
 }
 
-/* Simple Selector */
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
 
-/* Combinator
-    a. Child
-    b. Descenent 
-    c. sibling
-    d. Adjustend 
-*/
 
-/* Psuedo Selector */
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
-/* 
-.card{
-    width: 300px;
-    height: 300px;
-    padding: 10px;
-    margin: 40px auto;
-    border: 2px solid black;
+.flex{
+    display: flex;
+      gap: 10px;
+}
+
+/* .flex > .col{
+    width: 100%;
 } */
 
-
-.card{
-    padding: 10px;
-    margin: 40px auto;
-    border: 2px solid black;
-}
-
-
-.row-5{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-}
-
-.row-2{
+.grid-2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* justify-content: start; Defalut*/ 
+    /* justify-content: end; */
+   
 }
 
-.col{
-     border: 1px solid green;
-     padding: 10px;
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    color: black;
+     justify-content: end;
 }
 
-h1{
-    font-size: 60px;
+nav a{
+    text-decoration: none;
+    color: black;
 }
 
-.hero{
-    padding: 40px 20px;
+header{
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
 }
 
-.hero-img{
-    text-align: center;
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  
 }
