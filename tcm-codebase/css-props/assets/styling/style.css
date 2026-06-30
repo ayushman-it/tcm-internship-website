@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+/* Header */
+header{
+    padding: 10px;
+}
+
+header nav .menu{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+     justify-content: end;
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-dark, .btn-light{
+    padding: 10px 20px;
+    background-color: black;
+    color: white !important;
+
+    /* Short Hand Props */
+    border-radius: 8px;
+    text-decoration: none;
+
+    /* Open hand  */
+    /* border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; */
+}
+
+.btn-light{
+    background-color: white;
+    color: black !important;
+    border: 1px solid black;
+}
+
+/* Section */
+
+section{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.slot{
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 60px;
+}
+
+section .content h1{
+    font-size: 80px;
+    margin: 30px 0;
+}
+
+section .content p{
+    font-size: 20px;
+    color: black;
+}
+
+section .cta{
+    margin-top: 30px;
+}
