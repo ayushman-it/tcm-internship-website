@@ -1,68 +1,84 @@
-*{
-    margin: 0;
+* {
+    margin: 0px;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif UI, sans-serif;
 }
 
-/* boiler palet */
-:root{
-    /* padding */
-    --p-0 : 0rem;
-    --p-1 : 10px;
-    --p-2 : 15px;
-    --p-3 : 20px;
-    --p-4 : 25px;
-    --p-5 : 30px;
+.hero-section {
+    background-color: rgb(13, 68, 51);
+    color: white;
+    padding: 70px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin-bottom: 40px
+}
+
+.nav-links a {
+    margin-right: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(235, 230, 230);
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-icons i {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.container .text h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.container .text p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    max-width: 360px;
+
+}
+
+.buttons {
+    padding: 10px;
+
+}
+
+.btn-light {
+    background-color: white;
+    color: rgb(13, 68, 51);
+    padding: 10px;
 
 
-    /* padding-side */
-    --pt-0 : 0rem;
-    --pt-0 : 5px;
-    --pl-1 : 5px;
-    --pl-1 : 15px;
-    --pb-2 : 10px;
-    --pb-2 : 20px;
-    --pr-3 : 15px;
-    --pr-3 : 25px;
-   
+}
 
-    /* margin-by-sides */
-    --mt-0 : 0rem;
-    --mt-0 : 5px;
-    --ml-1 : 5px;
-    --ml-1 : 15px;
-    --mb-2 : 10px;
-    --mb-2 : 20px;
-    --mr-3 : 15px;
-    --mr-3 : 25px;
+.btn-dark {
+    background-color: rgb(13, 68, 51);
+    color: white;
+    padding: 10px;
+    border: 1px solid rgb(13, 68, 51);
+    cursor: pointer;
+}
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
 
-    /* margin */
-    --m-0 : 0rem;
-    --m-1 : 10px;
-    --m-2 : 15px;
-    --m-3 : 20px;
-    --m-4 : 25px;
-    --m-5 : 30px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-
-    
-    /* font-size */
-    --fs-small: 16px;
-    --fs-medium: 20px;
-    --fs-large: 34px;
-    --fs-xlarge: 40px;
-    --fs-xxlarge: 60px;
-
-
-
-    /* boarder-radius */
-    --rounded-0 : 0rem;
-    --rounded-1 : 10px;
-    --rounded-2 : 15px;
-    --rounded-3 : 20px;
-    --rounded-4 : 25px;
-    --rounded-5 : 30px;
-    --rounded-pill: 60px;
-   
-    
 }
