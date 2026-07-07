@@ -88,6 +88,8 @@
     background-color: black;
     color: aliceblue;
     margin-left: var(--m-6);
+    padding: var(--p-0) var(--p-1);
+    border-radius: 30px;
 }
 
 .grid-8{
@@ -101,6 +103,7 @@
 
 .search-box{
     background-color: rgb(201, 243, 229);
+
     
 }
 
@@ -118,3 +121,20 @@
     margin-top: var(--m-5);
 }
 
+
+.img-1{
+    width: 3%;
+    padding-top: var(--p-1);
+
+}
+
+
+input{
+     margin-bottom: var(--mb-5);
+     margin-top: var(--mb-5);
+}
+
+.search{
+    padding-left: 30rem;
+    text-align: center;
+}
