@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+/* img{
+    width: 400px;
+    animation-name: ansh;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes ansh {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+    animation-name: boxAnimation;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+img{
+    width: 400px;
+
+    animation-name: flip;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boxAnimation {
+    0%{
+        background-color: blue;
+        transform: translate(0px);
+    }
+    25%{
+        background-color: orange;
+         transform: translate(400px);
+    }
+    50%{
+        background-color: green;
+        transform: translate(400px) translateY(400px);
+    }
+    75%{
+        background-color: red;
+        transform: translate(0px) translateY(400px);
+    }
+    100%{
+        background-color: blueviolet;
+    }
+}
+
+
+@keyframes flip {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+/* 
+CSS - Responsive 
+CSS - Props (MISC)
+*/
