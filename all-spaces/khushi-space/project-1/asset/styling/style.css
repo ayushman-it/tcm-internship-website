@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-black : black;
+    --color-white : white;
+    --color-blue : blue;
+    --color-red : red;
+
+
+    /* marging */
+    --m-1 : 0px;
+    --m-2 : 5px;
+    --m-3 : 10px;
+    --m-4 : 15px;
+    --m-5 : 20px;
+    --xm-6 : 50px;
+
+
+    /* padding */
+    --p-1 : 0px;
+    --p-2 : 5px;
+    --p-3 : 10px;
+    --p-4 : 15px;
+    --p-5 : 20px;
+    --xp-6 : 50px;
+
+
+    /* special  */
+    --flex : flex;
+    --grid : grid;
+    
+ }
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.grid-3{
+    display: var(--grid);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    
+} 
+
+.hero .grid-3{
+    margin: var(--m-4) ;
+}
+
+.inp-1{
+    font-size: xx-large;
+    padding: var(--p-4) var(--p-4);
+}
+
+.hero  a {
+    background-color: rgb(82, 82, 82)  ;
+    font-size: xx-large;
+    text-decoration: none;
+    color: var(--color-white);
+     padding: var(--p-4) var(--p-4) ;
+     margin-right:10rem  ;
+     padding-left: 25px;
+      
+}
+ .hero .grid-2{
+    gap: 0;
+ }    
+
+.grid-2{
+    display: var(--grid);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: var(--m-4) ;
+}
+
+header i{
+    font-size: 35px;
+      margin: 15px;
+      color: black;
+}
+
+.hero i:hover{
+    color: rgb(102, 46, 153);
+    transition: 2s; 
+}
+
+.lower .icons i{
+    font-size: 35px;
+}
+ 
+.icons{
+     text-align: center;  
+}
+
+.flex-5{
+   padding-left:8rem;
+}
+
+.hero{
+    background-color: var(--color-white);
+}
+.lower{
+    background-color:var(--color-black); 
+    padding: var(--p-2);
+}
+
+.lower i{
+    color: var(--color-white);
+    padding-left: 56px;
+}
+
+.lower i:hover{
+    color: rgb(102, 46, 153);
+    transition: 2s;
+}
+ 
+.lower ul{
+    display: var(--flex);
+    gap: 30px;
+    font-size: large;
+     
+}
+
+.icons i{
+    cursor: pointer
+}
+
+.lower li a{
+    color: var(--color-white);
+     text-decoration: none ;
+     list-style-type: none;
+     font-size:30px;
+     padding-left:var(--xp-6 ) ;
+}
+
+.box{
+    background-image: url("slider1.webp");
+      width: 100%; 
+      background-repeat: no-repeat;   
+      height: 70rem;  
+      background-size: cover;
+    background-position: center;
+}
+
+.box .grid-2{
+    margin: 0 auto;
+}
+
+.box .main-portion{
+   padding-top: 19rem;
+}
+
+.main-portion .half{
+    height: 70rem;
+    align-items: center;
+    padding-top: 25rem;
+    padding-left: 6rem;
+}
+
+.main-portion p{
+    font-size: 6rem ;
+    margin-bottom: 8rem;
+} 
+ 
+.main-portion  a{
+    border: 3px solid black; 
+    font-size: xx-large;
+    text-decoration: none;
+    color: var(--color-black);
+     padding: var(--p-4) var(--p-4) ;
+     padding-left: 25px;
+} 
+
+.back{
+    background-color:#7d597d;
+     background-position: center;
+}
+ 
+.head-section{
+    width: 80%;
+    padding-left: 10rem;
+}
+
+.head-section .img{
+    text-align: end;
+    padding-right: 25px;
+    font-size: 30px;
+}
+
+.head-section .grid-2{
+    border-right: 2px solid grey;
+} 
+ 
+ 
+.contant{
+    color: var(--color-white);
+}
+
+.cloths{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 7rem;
+}
+
+.cloths h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cloths button{
+    border: none;
+    background-color: var(--color-white);
+    font-size: xx-large;
+}
+
+.cloths button:hover{
+    border-bottom:4px solid black ;
+}
+
+.flex-3{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    margin: var(--m-5) ;
+}
+
+.flex-4{
+    display: var(--flex);
+    justify-content: center;
+    gap: 30px;
+    margin-top: 55px;
+    margin-bottom: 65px;
+}
+
+.contant-img h1{
+    margin: var(--m-5);
+    text-align: start;
+} 
+
+.contant-img p{
+    color: var(--color-red);
+    padding-left: 25px;
+    font-size: 25px;
+}
+
+
+.box-2{
+     background-image: url("slider2.webp");
+      width: 100%; 
+      background-repeat: no-repeat;   
+      height: 60rem;  
+      background-size: cover;
+    background-position: center;
+}
+
+.box-2  a{
+    border: 3px solid #4e699c; 
+    font-size: xx-large;
+    text-decoration: none;
+    color: var(--color-black);
+     padding: var(--p-4) var(--p-4) ;
+     padding-left: 25px;
+     background-color: #4e699c;
+}
+
+.box-2 .half{
+    align-items: center;
+} 
+
+.box-2 .grid-2{
+    width: 90%;
+    height: 60rem;
+}
+
+.box-2 p{
+   font-size: xx-large;
+   color: rgb(182, 225, 243);
+   margin-bottom: 50px;
+}
+
+.box-2 h1{
+    font-size: 75px;
+    color: var(--color-white);
+    margin-bottom: 95px;
+}
+
+.down{
+      background-color: #4e699c;
+     background-position: center;
+}
+
+.down .grid-3{
+    width: 90%;
+    padding-left: 10rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: large;
+}
+
+.down .sec-1 {
+    border-right: 2px solid gray;
+}
+
+.down .sec-2 {
+    border-right: 2px solid gray;
+}
+
+.view .about{
+    text-align: center;
+    margin-top: 45px;
+}
+
+.view .about p{
+    font-size: xx-large;
+}
+
+.view .about h1{
+    font-size: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.buy .buy-1{
+    background-image: url(slider4.webp);
+    height: 60rem;
+    background-repeat: no-repeat;   
+    background-size: cover;
+    /* background-position: center; */
+    text-align: center;
+}
+
+.buy .buy-2{
+    background-image: url(slider3.webp);
+    height: 60rem;
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.buy .con{
+    padding-top: 25rem;
+    color: var(--color-white);
+}
+
+.buy p{
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+.buy h1{
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.buy a{
+      border: 3px solid #e8eaec; 
+    font-size: xx-large;
+    text-decoration: none;
+    color: var(--color-black);
+     padding: var(--p-4) var(--p-4) ;
+     padding-left: 25px;
+     background-color: #f0f2f6;
+}
+
+.buy h2{
+    margin-bottom: 55px;
+    font-size: 25px;
+}
+
+.buy .grid-2{
+    margin: 0%;
+}
+
+.bck{
+    background-color: #364a48;
+}
+
+.foot-sec{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.foot .grid-3{
+    text-align: center;
+}
+
+.foot .ptr{
+    font-size: 30px;
+}
