@@ -1,0 +1,147 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* boiler palet */
+
+:root{
+    /* padding */
+    --p-0 : 0rem;
+    --p-1 : 10px;
+    --p-2 : 15px;
+    --p-3 : 20px;
+    --p-4 : 25px;
+    --p-5 : 30px;
+
+
+    /* padding-side */
+    --pt-0 : 0rem;
+    --pt-1 : 5px;
+    --pl-2 : 5px;
+    --pl-3 : 15px;
+    --pb-4 : 10px;
+    --pb-5 : 20px;
+    --pr-6 : 15px;
+    --pr-7 : 25px;
+   
+
+    /* margin-by-sides */
+    --mt-0 : 0rem;
+    --mt-1 : 5px;
+    --ml-2 : 5px;
+    --ml-3 : 15px;
+    --mb-4 : 10px;
+    --mb-5 : 20px;
+    --mr-6 : 15px;
+    --mr-7 : 25px;
+
+
+    /* margin */
+    --m-0 : 0rem;
+    --m-1 : 10px;
+    --m-2 : 15px;
+    --m-3 : 20px;
+    --m-4 : 25px;
+    --m-5 : 30px;
+    --m-6 : 35px;
+    --m-7 : 40px;
+    --m-8 : 70px;   
+
+
+
+    /* font-size */
+    --fs-small: 16px;
+    --fs-medium: 20px;
+    --fs-large: 34px;
+    --fs-xlarge: 40px;
+    --fs-xxlarge: 60px;
+
+
+
+    /* boarder-radius */
+    --rounded-0 : 0rem;
+    --rounded-1 : 10px;
+    --rounded-2 : 15px;
+    --rounded-3 : 20px;
+    --rounded-4 : 25px;
+    --rounded-5 : 30px;
+    --rounded-pill: 60px;
+   
+}
+/* Main-code */
+
+
+.plant-container{
+    width:90%;
+    margin:5% auto;
+    padding: var(--p-3);
+    background-color: #e6f9fc;
+}
+
+.plant-container h2{
+    margin-bottom: var(--m-3);
+}
+
+.plant-images{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center
+}
+
+.plant-images img{
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+}
+button{
+    padding: var(--p-2) var(--p-3);
+    border-radius: var(--rounded-2);
+    cursor: pointer;
+}
+
+/* service section */
+
+.service-container{
+    width: 90%;
+    margin: 5% auto;
+}
+.hero{
+    background-image: url("./plantshipping.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.content{
+    width: 500px;
+}
+
+.content h1{
+    font-size: var(--fs-xxlarge);
+    color: #3e2b2b;
+    margin-bottom: var(--m-3);
+}
+
+.content p{
+    font-size: var(--fs-medium);
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: var(--m-5);
+}
+.service-container button{
+     padding: var(--p-2) var(--p-3);
+    border-radius: var(--rounded-2);
+    cursor: pointer;
+    margin-bottom: var(--m-3);
+}
+/* map section */
+
+.map-container img{
+    margin-top: var( --m-8);
+    width:100%;
+    display:block;
+}

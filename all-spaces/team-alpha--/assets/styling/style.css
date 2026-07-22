@@ -1,0 +1,140 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+/* boiler palet */
+:root{
+    /* padding */
+    --p-0 : 0rem;
+    --p-1 : 10px;
+    --p-2 : 15px;
+    --p-3 : 20px;
+    --p-4 : 25px;
+    --p-5 : 30px;
+    --p-6 : 70px;
+
+
+    /* padding-side */
+    --pt-0 : 0rem;
+    --pt-1 : 5px;
+    --pl-2 : 5px;
+    --pl-3 : 15px;
+    --pb-4 : 10px;
+    --pb-5 : 20px;
+    --pr-6 : 15px;
+    --pr-7 : 25px;
+   
+
+    /* margin-by-sides */
+    --mt-0 : 0rem;
+    --mt-1 : 5px;
+    --ml-2 : 5px;
+    --ml-3 : 15px;
+    --mb-4 : 10px;
+    --mb-5 : 20px;
+    --mr-6 : 15px;
+    --mr-7 : 25px;
+
+
+    /* margin */
+    --m-0 : 0rem;
+    --m-1 : 10px;
+    --m-2 : 15px;
+    --m-3 : 20px;
+    --m-4 : 25px;
+    --m-5 : 30px;
+    --m-6 : 60px;
+
+
+
+    /* font-size */
+    --fs-small: 16px;
+    --fs-medium: 20px;
+    --fs-large: 34px;
+    --fs-xlarge: 40px;
+    --fs-xxlarge: 60px;
+
+
+
+    /* boarder-radius */
+    --rounded-0 : 0rem;
+    --rounded-1 : 10px;
+    --rounded-2 : 15px;
+    --rounded-3 : 20px;
+    --rounded-4 : 25px;
+    --rounded-5 : 30px;
+    --rounded-pill: 60px;
+   
+    
+}
+
+.container{
+    margin: var(--ml-2 , --mr-7);
+    padding: var(--pr-7 , --pr-7);
+}
+
+.grid-2 , .grid{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    margin: var(--mt-1);
+}
+
+.view , .butn{
+    text-align: end;
+}
+
+.butn{
+    background-color: black;
+    color: aliceblue;
+    margin-left: var(--m-6);
+    padding: var(--p-0) var(--p-1);
+    border-radius: 30px;
+}
+
+.grid-8{
+    display: grid;
+    grid-template-columns: repeat(8 , 1fr);
+}
+
+.img{
+    padding: var(--p-5 );
+}
+
+.search-box{
+    background-color: rgb(201, 243, 229);
+
+    
+}
+
+.search{
+    width: 40%;
+    margin-top: var(--m-5);
+    margin-bottom: var(--m-5);
+    padding-left: 300px;
+}
+
+.foot{
+    margin-left: var(--m-3);
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin-top: var(--m-5);
+}
+
+
+.img-1{
+    width: 3%;
+    padding-top: var(--p-1);
+
+}
+
+
+input{
+     margin-bottom: var(--mb-5);
+     margin-top: var(--mb-5);
+}
+
+.search{
+    padding-left: 30rem;
+    text-align: center;
+}

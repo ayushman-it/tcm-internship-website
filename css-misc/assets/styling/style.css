@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 
+.tooltip-container{
+    margin: 40px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.tooltip-container button{
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: black;
+      cursor: pointer;
+}
+
+.tooltip{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: none;
+    position: relative;
+}
+
+.tooltip:after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: -5px;
+    right: 50%;
+    left: 50%;
+    transform: rotate(45deg);
+}
+
+button:hover ~ .tooltip{
+    display: block;
+} */
+
+
+/* .btn{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary{
+    color: white;
+    background-color: blue;
+}
+
+.btn-primary:hover{
+    background-color: black;
+} */
+
+/* Component */
+/* .btn-group{
+    display: flex;
+}
+
+.btn-group .btn:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.btn-group .btn:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead{
+    background-color: blueviolet;
+    color: white;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+tbody tr:hover{
+    background-color: lightgray;
+} */
+
+/* tbody tr:nth-child(odd){
+    background-color: lightgray;
+} */
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card{
+    border: 1px solid black;
+}
+
+.product-card img{
+    width: 100%;
+}
+
+.product-details{
+    padding: 10px;
+}
+
+.galary-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.product-img{
+    position: relative;
+}
+
+.product-card:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.product-card:hover .galary-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    transition: 0.4s;
+}
