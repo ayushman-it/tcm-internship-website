@@ -1,0 +1,80 @@
+
+body{
+    text-align: center;
+}
+
+
+.img-wrapper img{
+    /* transform: translateX(30px); */
+   animation-name: circle;
+   animation-timing-function: linear;
+   animation-duration: 4s;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: boxEffect;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+}
+
+
+/* Tooltip */
+.tool-tip{
+    width: 20%;
+    margin: 0 auto;
+    padding: 10px;
+    background: blue;
+    color: white;
+    margin-top: 10px;
+    display: none;
+    position: relative;
+}
+
+.tool-tip::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #0000ff;
+    top: -7px;
+    transform: rotate(45deg);
+}
+
+.menu:hover ~ .tool-tip{
+    display: block;
+}
+
+
+
+@keyframes boxEffect{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(800px);
+        background-color: blue;
+    }
+    75%{
+        transform: translateY(400px) translateX(800px);
+        background-color: green;
+    }
+    100%{
+        transform: translateY(400px) translateX(0px);
+         background-color: orange;
+    }
+   
+}
+
+@keyframes circle{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
