@@ -1,4 +1,4 @@
-alert('Welcome')
+alert('Welcome');
 
 let product = {
     name: "marker CT ball Standard pen ( Black )",
@@ -6,7 +6,7 @@ let product = {
     list: "add to favourite",
     price: 220,
 }
-console.log(product)
+console.log(product);
 
 let product2 = {
     name: "Dotted CT ball Standard pen ( Red )",
@@ -14,4 +14,6 @@ let product2 = {
     list: "add to favourite",
     price: 150,
 }
-console.log(typeof(product2))
+console.log(typeof(product2));
+
+console.log("hello world");
