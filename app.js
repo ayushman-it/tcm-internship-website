@@ -74,7 +74,7 @@
 // let users = ["Ayushman", "Harsh", "Rakesh", "Akram"];
 // console.log(users[3])
 
-let fruits = ["Apple", "Banana", "Grapes"]
+// let fruits = ["Apple", "Banana", "Grapes"]
 // console.log(typeof (fruits))
 
 // let car = color, price, ratings, type, showroom
@@ -99,112 +99,119 @@ let fruits = ["Apple", "Banana", "Grapes"]
 // ]
 // console.log(allUsers[2].name);
 
-let emp  = [
-    {
-        name: "Ayushman",
-        age: 23,
-        city: "waraseoni"
-    },
-      {
-        name: "Akram",
-        age: 22,
-        city: "Katani"
-    },
-      {
-        name: "Shivam",
-        age: 24,
-        city: "Balaghat"
-    },
-      {
-        name: "Ayushman",
-        age: 23,
-        city: "waraseoni"
-    },
-      {
-        name: "Akram",
-        age: 22,
-        city: "Katani"
-    },
-      {
-        name: "Shivam",
-        age: 24,
-        city: "Balaghat"
-    }
-    ,  {
-        name: "Ayushman",
-        age: 23,
-        city: "waraseoni"
-    },
-      {
-        name: "Akram",
-        age: 22,
-        city: "Katani"
-    },
-      {
-        name: "Shivam",
-        age: 24,
-        city: "Balaghat"
-    },  {
-        name: "Ayushman",
-        age: 23,
-        city: "waraseoni"
-    },
-      {
-        name: "Akram",
-        age: 22,
-        city: "Katani"
-    },
-      {
-        name: "Shivam",
-        age: 24,
-        city: "Balaghat"
-    },  {
-        name: "Ayushman",
-        age: 23,
-        city: "waraseoni"
-    },
-      {
-        name: "Akram",
-        age: 22,
-        city: "Katani"
-    },
-      {
-        name: "Shivam",
-        age: 24,
-        city: "Balaghat"
-    },
-     {
-        name: "Rajesh",
-        age: 24,
-        city: "Balaghat"
-    },
-     {
-        name: "Mohan",
-        age: 24,
-        city: "Balaghat"
-    }
-]
+// let emp  = [
+//     {
+//         name: "Ayushman",
+//         age: 23,
+//         city: "waraseoni"
+//     },
+//       {
+//         name: "Akram",
+//         age: 22,
+//         city: "Katani"
+//     },
+//       {
+//         name: "Shivam",
+//         age: 24,
+//         city: "Balaghat"
+//     },
+//       {
+//         name: "Ayushman",
+//         age: 23,
+//         city: "waraseoni"
+//     },
+//       {
+//         name: "Akram",
+//         age: 22,
+//         city: "Katani"
+//     },
+//       {
+//         name: "Shivam",
+//         age: 24,
+//         city: "Balaghat"
+//     }
+//     ,  {
+//         name: "Ayushman",
+//         age: 23,
+//         city: "waraseoni"
+//     },
+//       {
+//         name: "Akram",
+//         age: 22,
+//         city: "Katani"
+//     },
+//       {
+//         name: "Shivam",
+//         age: 24,
+//         city: "Balaghat"
+//     },  {
+//         name: "Ayushman",
+//         age: 23,
+//         city: "waraseoni"
+//     },
+//       {
+//         name: "Akram",
+//         age: 22,
+//         city: "Katani"
+//     },
+//       {
+//         name: "Shivam",
+//         age: 24,
+//         city: "Balaghat"
+//     },  {
+//         name: "Ayushman",
+//         age: 23,
+//         city: "waraseoni"
+//     },
+//       {
+//         name: "Akram",
+//         age: 22,
+//         city: "Katani"
+//     },
+//       {
+//         name: "Shivam",
+//         age: 24,
+//         city: "Balaghat"
+//     },
+//      {
+//         name: "Rajesh",
+//         age: 24,
+//         city: "Balaghat"
+//     },
+//      {
+//         name: "Mohan",
+//         age: 24,
+//         city: "Balaghat"
+//     }
+// ]
 
 // for loop
 
+// Returns Indexing = As a number
 // for(let agent = 0; agent < emp.length; agent++){
 //   console.log(agent, typeof(agent))
 //   // console.log(emp[agent].name)
 // }
 
-// for in loop
+
+// for in loop indexing as string
 // for(let agent in emp){
 //   console.log(emp[agent].name)
 // }
 
+// Value of index
 // for of loop
 // for(let agent of emp){
 //   console.log(agent)
 // }
 
+
+// Value of index
 // for each loop
 // emp.forEach(agent => {console.log(agent)})
 
+
+// Error Statment while does return anything
 // while loop
 // let x = 50;
 
@@ -213,6 +220,7 @@ let emp  = [
 //   x++;
 // }
 
+// Error Statement we can get values
 // do while loop
 // let x = 50;
 
@@ -244,17 +252,170 @@ let emp  = [
 //   console.log("Not eligible")
 // }
 
-// let color = "blue";
+// let color = "orange";
 
-// if(color == "red"){
-//   console.log("Yes color is red")
+// if(color == "blue"){
+//   console.log("Yes color is blue");
 // }
-// else if(color == "blue"){
-//   console.log("Yes it is blue")
+// else if(color == "green"){
+//   console.log("Yes Color is Green");
 // }
 // else if(color == "orange"){
-//   console.log("Yes color is Orange")
+//   console.log("Yes Color is Orange")
 // }
 // else{
-//   console.log("Not found")
+//   console.log("Not Found")
 // }
+
+// let date = 10;
+
+// switch (date) {
+//   case 6:
+//     console.log("Yes Today is birthday")
+//     break;
+//   case 7:
+//     console.log("Yes Today is Holiday")
+//     break;
+
+//   default:
+//     console.log("No Event Added in this date")
+//     break;
+// }
+
+// Simple Function
+
+// function pratham(){
+//   console.log("Pratham");
+// }
+// function ayush(){
+//   console.log("Ayushman");
+// }
+// function arman(){
+//   console.log("Arman");
+// }
+// function mohit(){
+//   console.log("Mohit");
+// }
+
+// mohit();
+
+// Nested Function
+
+// function students(){
+//     function pratham(){
+//       console.log("Pratham");
+
+//       function jyoti(){
+//         console.log("Jyoti");
+//       }
+//       jyoti();
+//     }pratham();
+//     function ayush(){
+//       console.log("Ayushman");
+//     }
+//     ayush();
+// }
+// students();
+
+// Function with parameters
+// function fullName(fname, lname){
+//   console.log(fname +" "+ lname);
+// }
+
+// fullName("Ayushman", "Chaurasiya");
+// fullName("Pratham", "Soni");
+// fullName("Mayur", "Agrawal");
+// fullName("Asama", "Ahemad");
+// fullName("Nil", "Soni");
+
+
+// Arrow Function
+// let fn = ()=> {console.log("Hii i am Arrow Function")}
+// fn();
+
+// variable Function
+// let fn = function(){
+//   console.log("hello i am variable function")
+// }
+// fn()
+
+// Instant Invoke Function - Anonymuous Function
+// (function(){
+//   console.log("Happy Hacking...")
+// })()
+
+// Clouser Function
+
+// function parent(){
+//   // Parent
+//   let x = 10;
+//   function child1(){
+//     // Child y
+//     let y = 20;
+//     function child2(){
+//       // Parent = Parent add
+//       let total = x + y;
+//         console.log(total);
+//       }child2();
+//   }child1();
+// }parent();
+
+
+// DOM 
+// Document Object Modal
+
+// document.getElementsByTagName();
+// document.getElementsByClassName();
+
+// document.getElementById()
+
+// document.querySelector('.head')
+// document.querySelector('#head')
+// document.querySelector('body > head')
+// document.querySelector('body head')
+
+// document.querySelectorAll()
+
+// let heading = document.getElementById('head');
+// heading.innerText = "TCM India";
+// heading.innerText = "TCM <span>India</span>";
+// heading.innerHTML = "TCM <span>India</span>";
+
+// console.log(document.getElementById('head'));
+
+
+// console.log(document.getElementsByClassName('head')[1]);
+
+// console.log(document.getElementsByTagName('h1')[1])
+
+// console.log(document.querySelector('.head'))
+
+// console.log(document.querySelectorAll('body > h1')[1]);
+
+// Accessing main tag for nested child
+let htmlBody = document.querySelector('body');
+
+// New element creation for my parent(Body)
+let heading = document.createElement('h1');
+
+// Chil inserted in parent
+htmlBody.appendChild(heading)
+
+// Content add
+heading.innerText = "TCM India";
+
+// Adding Styling
+// heading.style.color = "blue";
+// heading.style.fontSize = "60px";
+
+// heading.setAttribute('class', 'text-primary display-1 fw-bold');
+
+// heading.classList.add("")
+
+let anch = document.createElement('a');
+htmlBody.appendChild(anch);
+anch.innerText = "Go To facebook";
+
+anch.setAttribute('href', 'https://www.facebook.com');
+
+// Access ---> Update ------> Create 
