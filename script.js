@@ -15,35 +15,35 @@
 
 
 // Decleartion
-var name;
+// var name;
 
-// Assignment
-name = "Ayushman";
+// // Assignment
+// name = "Ayushman";
 
-// Re assign 
-name = "Raghav";
+// // Re assign 
+// name = "Raghav";
 
-// Re assign 
-name = "Sumit";
+// // Re assign 
+// name = "Sumit";
 
 // Re Decleartion
-var name = "Amrit";
+// var name = "Amrit";
 
 // console.log(name);
 
 // -------------------------------
 
 // Dcleartion
-let fname;
+// let fname;
 
 // Assignment
-fname = "Anirudh";
+// fname = "Anirudh";
 
 // Re Assignment
-fname = "Muskan";
+// fname = "Muskan";
 
 // Re Assignment
-fname = "Sumit";
+// fname = "Sumit";
 
 // let fname = "Jagdish";
 
@@ -63,28 +63,51 @@ fname = "Sumit";
 // let adhaar = BigInt(229382938293823899)
 // console.log(adhaar)
 
+// Key/Iterates/Position/Indexing
 
 let fruits = ["Apple", "Banana", "Grapes", "Orange"];
-// console.log(fruits[2])
+// console.log(fruits[3]);
 
-let obj = {
-    name: "apple",
-    price: "60/Kg"
+// For loop
+for(let i = 0; i < fruits.length; i++){
+    // console.log(i)
 }
 
-let allObj = [
-    {
-        name: "apple",
-        price: "60/Kg"
-    },
-    {
-        name: "Banana",
-        price: "60/Kg"
-    },
-    {
-        name: "Grapes",
-        price: "60/Kg"
-    }
-]
+// For in loop'
+for(let i in fruits){
+    // console.log(i)
+}
 
-console.log(allObj)
+// For of loop
+for(let i of fruits){
+    // console.log(i)
+}
+
+// For each loop
+fruits.forEach((i)=>{
+    // console.log(i)
+})
+
+
+// While loop
+
+let i = 40;
+let x = 40;
+
+while(i <= 10){
+    console.log(i);
+    i++;
+}
+
+// Do while loop
+do{
+    console.log(x);
+    x++;
+}while(x <= 10);
+
+// // For of = 3 Priyanshu, Om, Priya 
+// Priyanshu, Om, Priya 
+
+
+// // For each 3 Priyanshu, Om, Priya 
+// Priyanshu, Om, Priya 
