@@ -65,49 +65,59 @@
 
 // Key/Iterates/Position/Indexing
 
-let fruits = ["Apple", "Banana", "Grapes", "Orange"];
+// let fruits = ["Apple", "Banana", "Grapes", "Orange"];
 // console.log(fruits[3]);
 
-// For loop
-for(let i = 0; i < fruits.length; i++){
-    // console.log(i)
+// let name = "Ayushman";
+
+// console.log(name);
+
+// Position/Iterates/Indexing
+// -------------0-----------1----------2---------3----------4----
+let array = ["Ayushman", "Ansh", "Priyanshu", "Khushi", "Harshit"];
+
+// console.log("Hii i am ", array[0]);
+// console.log("Hii i am ", array[1]);
+// console.log("Hii i am ", array[2]);
+// console.log("Hii i am ", array[3]);
+
+// For Loop
+for(let agent = 0; agent < array.length; agent++){
+    console.log(agent)
 }
 
-// For in loop'
-for(let i in fruits){
-    // console.log(i)
+// For In loop
+for(let agent in array){
+    console.log(agent)
 }
 
 // For of loop
-for(let i of fruits){
-    // console.log(i)
+for(let agent of array){
+    console.log(agent)
 }
 
 // For each loop
-fruits.forEach((i)=>{
-    // console.log(i)
+array.forEach((agent)=>{
+    console.log(agent)
 })
 
-
-// While loop
-
-let i = 40;
-let x = 40;
-
-while(i <= 10){
-    console.log(i);
-    i++;
+// while loop
+let x = 80;
+while(x <= 10){
+    console.log(x)
+    x++;
 }
+// Website 50 Pages 
+// 40, 49, 50(Data unavaibale - ())
 
 // Do while loop
+
+let agent = 50;
 do{
-    console.log(x);
-    x++;
-}while(x <= 10);
+    console.log(agent)
+    agent++;
+}while(agent <= 10);
 
-// // For of = 3 Priyanshu, Om, Priya 
-// Priyanshu, Om, Priya 
+// Website 50 Pages 
+// 40, 49, 50(Data unavaibale - (No Data/ Old Data Previews))
 
-
-// // For each 3 Priyanshu, Om, Priya 
-// Priyanshu, Om, Priya 
