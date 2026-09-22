@@ -1,0 +1,31 @@
+/* By Tag Name */
+
+h1{
+
+}
+
+/* By Class Name */
+
+.heading{
+
+}
+
+
+/* By ID */
+#head{
+
+
+}
+
+/* By Query Selector */
+body #head{
+
+}
+
+body > #head{
+
+}
+
+.text-red{
+    color:red;
+}
