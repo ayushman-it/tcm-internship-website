@@ -29,3 +29,12 @@ body > #head{
 .text-red{
     color:red;
 }
+
+/* Combinator Selector */
+/* 
+1. Child Selector
+2. Decendent Selector
+3. Sibling Selector
+4. Adjusent Selector
+
+*/
