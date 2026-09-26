@@ -1,0 +1,67 @@
+.classA, .classB {
+  color: red;
+  font-size: 30px;
+  letter-spacing: 40px;
+  line-height: 40px;
+}
+
+.classB {
+  color: blue;
+  text-decoration: underline;
+  text-transform: lowercase;
+}
+
+.text-red {
+  color: red;
+  font-size: 16px;
+}
+
+.customSize {
+  padding: 55px;
+}
+
+.btn {
+  border: none;
+  padding: 8px 20px;
+  color: white;
+  cursor: pointer;
+}
+.btn.btn-primary {
+  background-color: blue;
+}
+.btn.btn-primary:hover {
+  transition: 0.4s;
+  background-color: #000099;
+}
+.btn.btn-success {
+  background-color: green;
+}
+.btn.btn-success:hover {
+  transition: 0.4s;
+  background-color: #001a00;
+}
+
+.btn-outline {
+  border: none;
+  padding: 8px 20px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid;
+  background-color: transparent;
+}
+.btn-outline.btn-primary {
+  border-color: blue;
+  color: blue;
+}
+.btn-outline.btn-primary:hover {
+  transition: 0.4s;
+  background-color: #000099;
+}
+.btn-outline.btn-success {
+  border-color: green;
+  color: green;
+}
+.btn-outline.btn-success:hover {
+  transition: 0.4s;
+  background-color: #001a00;
+}/*# sourceMappingURL=style.css.map */
