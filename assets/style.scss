@@ -1,108 +1,37 @@
-// 
-// 10 line of code (SCSS)
-// .btn-primary{
-//     // Hover
-//     // Focus
-//     // Active
-//     // Disabled
-//     // ripple
-// }
-
-// CSS 1000 (Auto Generate)
-
-// SCSS - Advanced version of css where we can create - variables, extends , nesting, functions, mixins,, objects and loop for resusblities of css
-
-
-$color-red: red;
-$color-blue: blue;
-$color-green: green;
-
-// Base Size
-$size-sm: 10px;
-$size-md: $size-sm + 5; // 15
-$size-lg: $size-md + 5; //20
-
-.classA{
-    color: red;
-    font-size: 30px;
-    letter-spacing: 40px;
-    line-height: 40px;
-}
-
-.classB{
-    @extend .classA;
-    color: blue;
-    text-decoration: underline;
-    text-transform: lowercase;
-}
-
-// Varaibles
-.text-red{
-    color: $color-red;
-    font-size: $size-sm + 6;
-}
-
-// Function
-@mixin btn-flat(){
-    border: none;
-    padding: 8px 20px;
-    color: white;
-    cursor: pointer
-}
-
-
-@mixin btn-outline(){
-    @include btn-flat();
-    border: 1px solid;
-    background-color: transparent
-}
-
-
-@mixin sizeCalc($userSize){
-    padding: $userSize + 5;
-}
-
-
-.customSize{
-    @include sizeCalc(50px)
-}
+$colors: (
+    primary: blue,
+    danger: red,
+    warning: orange,
+    dark: black,
+    success: green
+);
 
 .btn{
-    @include btn-flat();
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+}
 
-    &.btn-primary{
-        background-color: $color-blue;
-        &:hover{
-            transition: 0.4s;
-            background-color: darken($color-blue, 20);
-        }
+@each $priyanshu, $om in $colors{
+    .bg-#{$priyanshu}{
+        background-color: $om;
     }
-    &.btn-success{
-        background-color: $color-green;
+    .text-#{$priyanshu}{
+        color: $om;
+    }
+
+    .btn-#{$priyanshu}{
+        background-color: $om;
+        color: white;
+
         &:hover{
-            transition: 0.4s;
-            background-color: darken($color-green, 20);
+            background-color: darken($om, 10);
+        }
+
+        &:focus{
+            background-color: darken($om, 15);
         }
     }
 }
 
-.btn-outline{
-    @include btn-outline();
-
-    &.btn-primary{
-        border-color: $color-blue;
-        color: $color-blue;
-        &:hover{
-            transition: 0.4s;
-            background-color: darken($color-blue, 20);
-        }
-    }
-    &.btn-success{
-       border-color: $color-green;
-        color: $color-green;
-        &:hover{
-            transition: 0.4s;
-            background-color: darken($color-green, 20);
-        }
-    }
-}
+// Library CSS + SCSS + JS - Web Development  

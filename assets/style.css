@@ -1,67 +1,100 @@
-.classA, .classB {
-  color: red;
-  font-size: 30px;
-  letter-spacing: 40px;
-  line-height: 40px;
-}
-
-.classB {
-  color: blue;
-  text-decoration: underline;
-  text-transform: lowercase;
-}
-
-.text-red {
-  color: red;
-  font-size: 16px;
-}
-
-.customSize {
-  padding: 55px;
-}
-
 .btn {
+  padding: 10px 20px;
   border: none;
-  padding: 8px 20px;
-  color: white;
-  cursor: pointer;
+  border-radius: 2px;
 }
-.btn.btn-primary {
+
+.bg-primary {
   background-color: blue;
 }
-.btn.btn-primary:hover {
-  transition: 0.4s;
-  background-color: #000099;
-}
-.btn.btn-success {
-  background-color: green;
-}
-.btn.btn-success:hover {
-  transition: 0.4s;
-  background-color: #001a00;
-}
 
-.btn-outline {
-  border: none;
-  padding: 8px 20px;
-  color: white;
-  cursor: pointer;
-  border: 1px solid;
-  background-color: transparent;
-}
-.btn-outline.btn-primary {
-  border-color: blue;
+.text-primary {
   color: blue;
 }
-.btn-outline.btn-primary:hover {
-  transition: 0.4s;
-  background-color: #000099;
+
+.btn-primary {
+  background-color: blue;
+  color: white;
 }
-.btn-outline.btn-success {
-  border-color: green;
+.btn-primary:hover {
+  background-color: #0000cc;
+}
+.btn-primary:focus {
+  background-color: rgb(0, 0, 178.5);
+}
+
+.bg-danger {
+  background-color: red;
+}
+
+.text-danger {
+  color: red;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+.btn-danger:hover {
+  background-color: #cc0000;
+}
+.btn-danger:focus {
+  background-color: rgb(178.5, 0, 0);
+}
+
+.bg-warning {
+  background-color: orange;
+}
+
+.text-warning {
+  color: orange;
+}
+
+.btn-warning {
+  background-color: orange;
+  color: white;
+}
+.btn-warning:hover {
+  background-color: #cc8400;
+}
+.btn-warning:focus {
+  background-color: rgb(178.5, 115.5, 0);
+}
+
+.bg-dark {
+  background-color: black;
+}
+
+.text-dark {
+  color: black;
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+}
+.btn-dark:hover {
+  background-color: black;
+}
+.btn-dark:focus {
+  background-color: black;
+}
+
+.bg-success {
+  background-color: green;
+}
+
+.text-success {
   color: green;
 }
-.btn-outline.btn-success:hover {
-  transition: 0.4s;
-  background-color: #001a00;
+
+.btn-success {
+  background-color: green;
+  color: white;
+}
+.btn-success:hover {
+  background-color: #004d00;
+}
+.btn-success:focus {
+  background-color: rgb(0, 51.5, 0);
 }/*# sourceMappingURL=style.css.map */
