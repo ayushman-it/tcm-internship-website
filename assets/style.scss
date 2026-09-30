@@ -1,37 +1,18 @@
-$colors: (
-    primary: blue,
-    danger: red,
-    warning: orange,
-    dark: black,
-    success: green
-);
+@use "./variables/variable";
+@use "./variables/theme";
 
-.btn{
-    padding: 10px 20px;
-    border: none;
-    border-radius: 2px;
+// @import './variables/variable.scss';
+// @import './mixin/btnfn.scss';
+// @use "mixin/btnfn";
+
+body{
+    background-color: theme.$theme-blue;
 }
 
-@each $priyanshu, $om in $colors{
-    .bg-#{$priyanshu}{
-        background-color: $om;
-    }
-    .text-#{$priyanshu}{
-        color: $om;
-    }
-
-    .btn-#{$priyanshu}{
-        background-color: $om;
-        color: white;
-
-        &:hover{
-            background-color: darken($om, 10);
-        }
-
-        &:focus{
-            background-color: darken($om, 15);
-        }
-    }
+.test-color{
+    color: variable.$color-dark;
 }
 
-// Library CSS + SCSS + JS - Web Development  
+// .btn-flat{
+//     @include btn-flat();
+// }
