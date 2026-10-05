@@ -239,34 +239,167 @@
 
 // DOM - Document Object Modal
 // By Using DOM methods we can access, read, update and create html elements from javasscript.
-let heading;
-let para;
+// let heading;
+// let para;
 
-// Access
-heading = document.getElementsByTagName('h1');
-para = document.getElementsByTagName('p');
+// // Access
+// heading = document.getElementsByTagName('h1');
+// para = document.getElementsByTagName('p');
 
-console.log(heading)
-console.log(para);
+// console.log(heading)
+// console.log(para);
 
-// Read
-console.log(heading[2].innerText);
+// // Read
+// console.log(heading[2].innerText);
 
-// Update
-heading[0].innerText = "TCMOne";
+// // Update
+// heading[0].innerText = "TCMOne";
 
-// Create
-let headingSec = document.createElement('h2');
-let body = document.getElementsByTagName('body')[0];
+// // Create
+// let headingSec = document.createElement('h2');
+// let body = document.getElementsByTagName('body')[0];
 
-let headingThird = document.createElement('h3');
+// let headingThird = document.createElement('h3');
 
-body.appendChild(headingSec);
-headingSec.innerText = "Heading made by js";
+// body.appendChild(headingSec);
+// headingSec.innerText = "Heading made by js";
 
-body.appendChild(headingThird);
-headingThird.innerText = "Heading Third";
+// body.appendChild(headingThird);
+// headingThird.innerText = "Heading Third";
 
-// Decorate
-// headingSec.style.color = "red";
-headingSec.setAttribute("class", "text-red")
+// // Decorate
+// // headingSec.style.color = "red";
+// headingSec.setAttribute("class", "text-red")
+
+
+
+// Js Intragtion 
+// JS Output
+// 1. alert();
+// alert("Hello");
+// 2. console.log();
+// console.log("2" + 2);
+// 3. prompt();
+// prompt("Enter Your name");
+// 4. confirm();
+// confirm("Are u want to delete this ?");
+// 5. document.write();
+// document.write("Hello");
+// 6. console.error();
+// console.error("something went wrong!");
+
+// Variable = var, let, const 
+
+// JS Variables, Data Types
+// Primitive
+// 1. number
+// let num = 12;
+// console.log(num);
+
+// // 2. string
+// let name = "Ayushmann";
+// console.log(name);
+// // 3. boolean
+// let result = false;
+// console.log(result)
+
+// // 4. null
+// let unfilledData = null;
+// console.log(unfilledData)
+// // 5. undefined
+// let city;
+// console.log(city);
+// // 6. bigint
+// let adhaar = BigInt(28932932939n);
+// console.log(adhaar);
+// console.log(typeof(adhaar));
+
+
+// Non Primitive
+// 1. Array 
+let array = ["Anirudh", "Mohan", "Raj", "Shyam"];
+// console.log(array[3]);
+
+
+let obj = [
+    {
+    name: "Anirudh",
+    age: 23,
+    phone: 323232323,
+    email: "ani@gmail.com",
+    location: "Rajsthan"
+},
+{
+    name: "Aman",
+    age: 23,
+    phone: 4343434,
+    email: "aman@gmail.com",
+    location: "Rajsthan"
+},
+{
+    name: "Akash",
+    age: 23,
+    phone: 34334342,
+    email: "akash@gmail.com",
+    location: "Rajsthan"
+}
+]
+
+// console.log(obj[2].email);
+
+
+
+// Loops, If else, else if, switchcase
+
+// Loops
+
+// for loop
+// for(let i = 0; i < obj.length; i++){
+//     console.log(i)
+// }
+
+// // for in loop
+// for(let i in obj){
+//     console.log(i)
+// }
+
+// // for of loop
+// for(let i of obj){
+//     console.log("For of ", i)
+// }
+
+// for each loop
+
+// obj.forEach(i =>{
+//     console.log("for each", i)
+// })
+
+
+// while loop
+
+// let i = 40;
+// let x = 40;
+
+// // while(i <= 10){
+// //     console.log(i);
+// //     i++;
+// // }
+
+
+// // do while loop
+// do{
+//     console.log(x);
+//     x++;
+// }while(x <= 10);
+
+
+// Second level
+// DOM
+
+// Prtham - for of loop
+//  class A - sabhi ko bacho ko task dena hai 
+//  pratham ----> white board ---> task entry ---> 40 (task);
+
+// Priyanshu - for each loop
+//  class A - sabhi ko bacho ko task dena hai 
+//  pratham ----> each student -----> each student notebook ----> entry task----40 (task) unique
