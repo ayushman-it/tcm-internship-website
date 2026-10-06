@@ -392,10 +392,6 @@ let obj = [
 //     x++;
 // }while(x <= 10);
 
-
-// Second level
-// DOM
-
 // Prtham - for of loop
 //  class A - sabhi ko bacho ko task dena hai 
 //  pratham ----> white board ---> task entry ---> 40 (task);
@@ -403,3 +399,27 @@ let obj = [
 // Priyanshu - for each loop
 //  class A - sabhi ko bacho ko task dena hai 
 //  pratham ----> each student -----> each student notebook ----> entry task----40 (task) unique
+
+
+// Second level
+// DOM
+
+// document.getElementsByTagName("h1")[2].innerText = "Change 1";
+
+// console.log(document.getElementsByClassName("head")[2].innerText);
+
+// console.log(document.getElementById('temp').innerText);
+
+// console.log(
+// document.querySelector('h1'));
+
+
+// console.log(
+// document.getElementsByTagName('h1'));
+
+// document.querySelectorAll("[href='#']")[0].innerText = "About";
+
+
+
+
+
