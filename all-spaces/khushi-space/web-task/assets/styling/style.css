@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-black : black;
+    --color-white : white;
+    --color-blue : blue;
+    --color-red : red;
+
+
+    /* marging */
+    --m-1 : 0px;
+    --m-2 : 5px;
+    --m-3 : 10px;
+    --m-4 : 15px;
+    --m-5 : 20px;
+    --xm-6 : 50px;
+
+
+    /* padding */
+    --p-1 : 0px;
+    --p-2 : 5px;
+    --p-3 : 10px;
+    --p-4 : 15px;
+    --p-5 : 20px;
+    --xp-6 : 50px;
+
+
+    /* special  */
+    --flex : flex;
+    --grid : grid;
+
+    --flight-gradient: linear-gradient(135deg, #020381 0%, #151a7a 46%, #2874fc 100%);
+    --flight-dark-gradient: linear-gradient(135deg, #020381 0%, #151a7a 46%, #2874fc 100%);
+    
+ }
+
+
+.hero{
+    margin-left: 7rem; 
+    width: 80rem;
+    height: 43rem;
+    background-image: url(../images/doctor-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;    
+}
+
+.hero:hover{
+    background-image: url(../images/operation.jpg);
+    transition: 1s;
+}
+
+.header .grid-3{
+    display: var(--grid);
+    grid-template-columns: 1fr  3fr 1fr ;
+    gap: 0;
+}
+
+.img{
+    width: 90%;
+}
+
+.header a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: var(--p-4) var(--p-4) ;
+    text-align: center; 
+    color: var(--color-black);
+}
+
+.header .flex-6{
+     display: var(--flex);
+     gap: 10px;
+     flex-wrap: wrap;
+     justify-content: center; 
+     margin-top: 15px;
+}
+
+.search{
+    align-items: center;
+    margin-top: 30px;
+}
+
+.search input{
+    border-radius: 5px;
+}
+
+.hero .text h1{
+    font-size: 4rem;
+    height: 20px;
+     color: var(--color-white);
+     padding-top: 10rem;
+}
+
+.hero .text{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.hero .text p{
+    margin-top: 9rem;
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.hero .about{
+    border: 3px solid var(--color-white);
+    padding: 5px;
+    display: inline-block; 
+    color: var(--color-white);
+    backdrop-filter: blur(5px);
+    text-align: center; 
+    font-size: x-large;
+}
+
+.head .flex-3{
+    display: var(--flex);
+     gap: 10px;
+     flex-wrap: wrap; 
+     margin-top: 15px;
+}  
+
+.hero button{
+    font-size: xx-large;
+    color: var(--color-white);
+    background-color: lightblue;
+    padding: var(--p-2);
+    border-radius: 10px ;
+}
