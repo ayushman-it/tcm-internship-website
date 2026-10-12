@@ -415,11 +415,91 @@ let obj = [
 
 
 // console.log(
-// document.getElementsByTagName('h1'));
+// 
 
 // document.querySelectorAll("[href='#']")[0].innerText = "About";
 
 
+// let head = document.querySelector('h1');
+// let anch = document.querySelector('a');
+
+// head.style.color = "red";
+// head.style.fontSize = "40px";
+// head.style.backgroundColor = "yellow";
+
+// head.setAttribute("class", "text-danger fs-4");
+
+// anch.setAttribute('href', 'https://www.facebook.com');
+
+
+// head.classList.add('testone');
+
+// console.log(anch);
+
+// let head = document.querySelector('h1');
+// let img = document.querySelector('img');
+// let body = document.querySelector('body');
+// Styling
+
+// head.style.color = "red";
+// head.style.backgroundColor = "yellow";
+// head.style.padding = "10px 20px";
+
+
+// By Attribute
+
+// head.setAttribute('id', 'testId');
+
+// img.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG5xgKErzgj8KWXChTf9RCRgrYqAz4ioAP04e6pw304So4G8fIARuylwE&s=10');
+// img.setAttribute('alt', 'Tech Image');
+// img.setAttribute('width', '200');
+
+// ClassList
+
+// head.setAttribute('class', 'text-danger bg-yellow');
+
+// head.classList.add("TestClass");
+// head.classList.remove("head");
 
 
 
+
+// console.log(head)
+// console.log(img)
+
+// HTML ----> JS 
+
+// JS ------> Update HTML
+
+// JS ------> CSS / Styling HTML
+
+
+// Access Main Parent
+let body, head, para, img, anch;
+body = document.querySelector('body');
+
+// Create
+head = document.createElement('h1');
+para = document.createElement('p');
+img = document.createElement('img');
+anch = document.createElement('a');
+
+// Append - Making Child in main Parent
+body.appendChild(head);
+body.appendChild(para);
+body.appendChild(img);
+body.appendChild(anch);
+
+// Init
+head.innerText = "Prgramming Ashram";
+para.innerText = "Internationalized and accessible components for everyone. Well tested to ensure performance and reliability.";
+
+img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG5xgKErzgj8KWXChTf9RCRgrYqAz4ioAP04e6pw304So4G8fIARuylwE&s=10";
+
+anch.href = "https://facebook.com";
+anch.innerText = "Go to Facebook";
+
+// img.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG5xgKErzgj8KWXChTf9RCRgrYqAz4ioAP04e6pw304So4G8fIARuylwE&s=10');
+
+// Styling
+head.setAttribute('class', 'text-danger');

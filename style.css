@@ -26,6 +26,19 @@ body > #head{
 
 }
 
-.text-red{
+.text-danger{
     color:red;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+.fs-4{
+    font-size:20px;
+}
+
+.dark-theme{
+    background-color: black;
+    color: white;
 }
