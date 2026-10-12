@@ -37,7 +37,6 @@
     
  }
 
-
 .hero{
     margin-left: 7rem; 
     width: 80rem;
@@ -46,7 +45,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 30px;    
+    border-radius: 30px;
+    margin-bottom: 50px;    
 }
 
 .hero:hover{
@@ -59,6 +59,7 @@
     grid-template-columns: 1fr  3fr 1fr ;
     gap: 0;
 }
+
 
 .img{
     width: 90%;
@@ -92,8 +93,9 @@
 .hero .text h1{
     font-size: 4rem;
     height: 20px;
-     color: var(--color-white);
+     color: rgb(223, 132, 12);
      padding-top: 10rem;
+     text-b
 }
 
 .hero .text{
@@ -105,14 +107,14 @@
     margin-top: 9rem;
     font-size: x-large;
     font-weight: bold;
-    color: var(--color-white);
+    color:white ;
 }
 
 .hero .about{
-    border: 3px solid var(--color-white);
+    border: 3px solid  rgb(213, 213, 245);
     padding: 5px;
     display: inline-block; 
-    color: var(--color-white);
+    color:rgb(208, 118, 40);
     backdrop-filter: blur(5px);
     text-align: center; 
     font-size: x-large;
@@ -128,7 +130,183 @@
 .hero button{
     font-size: xx-large;
     color: var(--color-white);
-    background-color: lightblue;
+    background-color: rgb(131, 172, 185);
     padding: var(--p-2);
     border-radius: 10px ;
 }
+
+.mid .grid-4{
+    display: var(--grid);
+     grid-template-columns: repeat(4 , 1fr);
+     gap: 3%;
+     margin-top: 10px;
+}
+
+.mid p{
+    font-size: 15px;
+}
+
+.mid{
+    width: 80rem;
+    margin-left: 8rem;
+    border: solid rgb(185, 198, 237);
+    background-color: #d5ddea;
+    border-radius: 10px;
+    color: #151a7a;
+}
+
+.mid .details:hover{
+    background-color: #b2c3db;
+    border-radius: 5px;
+    transition: 1s;
+    transform: scale(1.04);
+    overflow: hidden;
+}
+.mid .details h5{
+    font-size: 17px;
+}
+.mid .details{
+  padding-left: var(--p-4);   
+}
+.mid .details p{
+    background-color: #90a2c0;
+    border-radius: 10px;
+    margin-right: 90px ;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.mid-lower .grid-4{
+    display: var(--grid) ;
+    grid-template-columns: repeat(4 , 1fr);
+    border: solid rgb(224, 224, 241);
+    margin-bottom: 10px;
+}
+
+.mid-lower h4 {
+      margin-top: 10px;
+      color: #0f1245;
+}
+
+.mid-lower h6{
+    background-color: #e2eaf6;
+    border-radius: 20px;
+    margin-right: 40px ;
+    text-align: center;
+}
+
+.explore{
+    margin-top: 80px;
+    margin-left: 8rem;
+    width: 80rem;
+    border: solid rgb(185, 198, 237);
+    background-color: #d5ddea;
+    border-radius: 20px;
+    height: 48rem;
+}
+
+.explore .grid-5{
+    display: var(--grid);
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1%;
+    height: 24rem;
+    padding-bottom: 40px; 
+}
+
+.explore .grid-5 .img-1{
+        background-image: url(../images/mumbai.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        border:solid black ;
+}
+
+.explore .grid-5 .img-2{
+    background-image: url(../images/bangalore.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border:solid black ;
+}
+
+.explore .grid-5 .img-3{
+    background-image: url(../images/pune.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border:solid black ;
+}
+
+.explore .grid-5 .img-4{
+    background-image: url(../images/hydrabad.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border:solid black ;
+}
+
+.explore .grid-5 .img-5{
+    background-image: url(../images/delhi.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border:solid black ;
+}
+
+.explore .grid-5 .img-6{
+    background-image: url(../images/OIP.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border:solid black ;
+}
+
+.explore .info{
+   padding-top: 8rem;
+}
+
+.explore .info:hover{
+   transition: 1s;
+   transform: scale(1.02);
+}
+
+.explore h2{
+    color: rgb(239, 237, 237);
+    font-weight: bold;
+}
+
+.explore h6{
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.explore .grid-5  p{
+    font-weight: bold ;
+    color: var(--color-white);
+}
+
+.explore h5{
+    color: rgb(231, 231, 239);
+}
+
+.exp-head p{
+    color: #020381;
+    font-weight: bold;
+}
+
+.explore .exp-head h1{
+    font-weight: bold;
+    color: #1a1b1d;
+}
+
+.exp-head .p-2{
+    font-weight: bold;
+    color: #020381;
+}
+
