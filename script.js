@@ -475,31 +475,250 @@ let obj = [
 
 
 // Access Main Parent
-let body, head, para, img, anch;
+// let body, head, para, img, anch;
+// body = document.querySelector('body');
+
+// // Create
+// head = document.createElement('h1');
+// para = document.createElement('p');
+// img = document.createElement('img');
+// anch = document.createElement('a');
+
+// // Append - Making Child in main Parent
+// body.appendChild(head);
+// body.appendChild(para);
+// body.appendChild(img);
+// body.appendChild(anch);
+
+// // Init
+// head.innerText = "Prgramming Ashram";
+// para.innerText = "Internationalized and accessible components for everyone. Well tested to ensure performance and reliability.";
+
+// img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG5xgKErzgj8KWXChTf9RCRgrYqAz4ioAP04e6pw304So4G8fIARuylwE&s=10";
+
+// anch.href = "https://facebook.com";
+// anch.innerText = "Go to Facebook";
+
+// // img.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG5xgKErzgj8KWXChTf9RCRgrYqAz4ioAP04e6pw304So4G8fIARuylwE&s=10');
+
+// // Styling
+// head.setAttribute('class', 'text-danger');
+
+// Section ----> Container ---> Row ----> Column - 1
+
+
+let body, section, container, row, column;
+
+// Access Main
 body = document.querySelector('body');
 
 // Create
-head = document.createElement('h1');
-para = document.createElement('p');
-img = document.createElement('img');
-anch = document.createElement('a');
+section = document.createElement("section");
+container = document.createElement("div");
+row = document.createElement('div');
+column = document.createElement("div");
 
-// Append - Making Child in main Parent
-body.appendChild(head);
-body.appendChild(para);
-body.appendChild(img);
-body.appendChild(anch);
+// Append
+// body ---> section ----> container ----> row ---> column
+
+body.appendChild(section);
+section.appendChild(container);
+container.appendChild(row);
+row.appendChild(column);
+
+// Attribute Setup
+section.setAttribute("class", 'py-5 bg-primary-subtle');
+container.setAttribute('class', "container");
+row.setAttribute('class', 'row');
+column.setAttribute('class', 'col-md-12');
+
+
 
 // Init
-head.innerText = "Prgramming Ashram";
-para.innerText = "Internationalized and accessible components for everyone. Well tested to ensure performance and reliability.";
+column.innerHTML = `
+    <h1 class="display-2 fw-bold">TCM <span class="text-danger">One</spam></h1>
+    <p>Compile Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:</p>
+`;
 
-img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG5xgKErzgj8KWXChTf9RCRgrYqAz4ioAP04e6pw304So4G8fIARuylwE&s=10";
 
-anch.href = "https://facebook.com";
-anch.innerText = "Go to Facebook";
+const courses = [
+  {
+    id: 'CRS-101',
+    courseName: 'Full-Stack Web Development Bootcamp',
+    price: 499.00,
+    date: '2026-11-01',
+    seats: 35
+  },
+  {
+    id: 'CRS-102',
+    courseName: 'Applied Machine Learning & Deep Learning',
+    price: 599.00,
+    date: '2026-11-05',
+    seats: 25
+  },
+  {
+    id: 'CRS-103',
+    courseName: 'Data Analytics with Python & SQL',
+    price: 349.00,
+    date: '2026-11-10',
+    seats: 40
+  },
+  {
+    id: 'CRS-104',
+    courseName: 'Cloud Architecture on AWS & Azure',
+    price: 449.00,
+    date: '2026-11-12',
+    seats: 30
+  },
+  {
+    id: 'CRS-105',
+    courseName: 'UI/UX Design Systems & Prototyping',
+    price: 299.00,
+    date: '2026-11-15',
+    seats: 20
+  },
+  {
+    id: 'CRS-106',
+    courseName: 'DevOps & Kubernetes Masterclass',
+    price: 499.00,
+    date: '2026-11-18',
+    seats: 25
+  },
+  {
+    id: 'CRS-107',
+    courseName: 'Cybersecurity Fundamentals & Ethical Hacking',
+    price: 549.00,
+    date: '2026-11-20',
+    seats: 18
+  },
+  {
+    id: 'CRS-108',
+    courseName: 'Product Management: Idea to Scale',
+    price: 399.00,
+    date: '2026-11-22',
+    seats: 30
+  },
+  {
+    id: 'CRS-109',
+    courseName: 'iOS App Development with Swift',
+    price: 429.00,
+    date: '2026-11-25',
+    seats: 22
+  },
+  {
+    id: 'CRS-110',
+    courseName: 'Modern Android Development with Kotlin',
+    price: 429.00,
+    date: '2026-11-28',
+    seats: 22
+  },
+  {
+    id: 'CRS-111',
+    courseName: 'Prompt Engineering & Generative AI Systems',
+    price: 279.00,
+    date: '2026-12-01',
+    seats: 50
+  },
+  {
+    id: 'CRS-112',
+    courseName: 'Microservices Architecture with Go',
+    price: 479.00,
+    date: '2026-12-03',
+    seats: 20
+  },
+  {
+    id: 'CRS-113',
+    courseName: 'Blockchain & Smart Contract Development',
+    price: 529.00,
+    date: '2026-12-05',
+    seats: 15
+  },
+  {
+    id: 'CRS-114',
+    courseName: 'Enterprise Database Administration & Tuning',
+    price: 389.00,
+    date: '2026-12-08',
+    seats: 28
+  },
+  {
+    id: 'CRS-115',
+    courseName: 'Technical Writing & Developer Documentation',
+    price: 199.00,
+    date: '2026-12-10',
+    seats: 40
+  },
+  {
+    id: 'CRS-116',
+    courseName: 'Automated Testing & QA with Playwright',
+    price: 299.00,
+    date: '2026-12-12',
+    seats: 30
+  },
+  {
+    id: 'CRS-117',
+    courseName: 'Digital Marketing Analytics & SEO Strategy',
+    price: 249.00,
+    date: '2026-12-15',
+    seats: 45
+  },
+  {
+    id: 'CRS-118',
+    courseName: 'Embedded Systems & IoT with Rust',
+    price: 519.00,
+    date: '2026-12-18',
+    seats: 16
+  },
+  {
+    id: 'CRS-119',
+    courseName: 'Financial Modeling & Algorithmic Trading',
+    price: 649.00,
+    date: '2026-12-20',
+    seats: 20
+  },
+  {
+    id: 'CRS-120',
+    courseName: 'Natural Language Processing with Transformers',
+    price: 579.00,
+    date: '2026-12-22',
+    seats: 24
+  }
+];
+    
+let article, container1, row1;
 
-// img.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG5xgKErzgj8KWXChTf9RCRgrYqAz4ioAP04e6pw304So4G8fIARuylwE&s=10');
+// Create
+article = document.createElement("article");
+container1 = document.createElement("div");
+row1 = document.createElement('div');
 
-// Styling
-head.setAttribute('class', 'text-danger');
+// Append
+// body ---> section ----> container ----> row ---> column
+
+body.appendChild(article);
+article.appendChild(container1);
+container1.appendChild(row1);
+
+// Attribute Setup
+article.setAttribute("class", 'py-5 bg-warning-subtle');
+container1.setAttribute('class', "container");
+row1.setAttribute('class', 'row');
+
+
+for(let i = 0; i < courses.length; i++){
+    row1.innerHTML +=`
+        <div class="col-md-3">
+            <div class='card my-2'>
+                <div class='card-body'>
+                    <span>${courses[i].id}</span>
+                    <h4 class='fw-light'>${courses[i].courseName}</h4>
+                    <h5 class='fs-6 text-secondary'>${courses[i].date}</h5>
+                    <hr>
+                    <div class='d-flex justify-content-between'>
+                        <p>Seats : ${(courses[i].seats > 30) ? "Seats Available" : "Filling fast"}</p>
+                        <p>₹ ${courses[i].price}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
