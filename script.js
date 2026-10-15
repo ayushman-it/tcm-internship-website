@@ -507,39 +507,38 @@ let obj = [
 // Section ----> Container ---> Row ----> Column - 1
 
 
-let body, section, container, row, column;
+// let body, section, container, row, column;
 
-// Access Main
-body = document.querySelector('body');
+// // Access Main
+// body = document.querySelector('body');
 
-// Create
-section = document.createElement("section");
-container = document.createElement("div");
-row = document.createElement('div');
-column = document.createElement("div");
+// // Create
+// section = document.createElement("section");
+// container = document.createElement("div");
+// row = document.createElement('div');
+// column = document.createElement("div");
 
 // Append
 // body ---> section ----> container ----> row ---> column
 
-body.appendChild(section);
-section.appendChild(container);
-container.appendChild(row);
-row.appendChild(column);
+// body.appendChild(section);
+// section.appendChild(container);
+// container.appendChild(row);
+// row.appendChild(column);
 
-// Attribute Setup
-section.setAttribute("class", 'py-5 bg-primary-subtle');
-container.setAttribute('class', "container");
-row.setAttribute('class', 'row');
-column.setAttribute('class', 'col-md-12');
+// // Attribute Setup
+// section.setAttribute("class", 'py-5 bg-primary-subtle');
+// container.setAttribute('class', "container");
+// row.setAttribute('class', 'row');
+// column.setAttribute('class', 'col-md-12');
 
 
 
-// Init
-column.innerHTML = `
-    <h1 class="display-2 fw-bold">TCM <span class="text-danger">One</spam></h1>
-    <p>Compile Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:</p>
-`;
-
+// // Init
+// column.innerHTML = `
+//     <h1 class="display-2 fw-bold">TCM <span class="text-danger">One</spam></h1>
+//     <p>Compile Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:</p>
+// `;
 
 const courses = [
   {
@@ -681,44 +680,55 @@ const courses = [
     price: 579.00,
     date: '2026-12-22',
     seats: 24
+  },
+  {
+    id: 'CRS-121',
+    courseName: 'Web Development',
+    price: 343.00,
+    date: '2026-12-22',
+    seats: 22
   }
 ];
-    
-let article, container1, row1;
 
-// Create
-article = document.createElement("article");
-container1 = document.createElement("div");
-row1 = document.createElement('div');
 
-// Append
-// body ---> section ----> container ----> row ---> column
+// JAVASCRIPT <---------------> HTML
 
-body.appendChild(article);
-article.appendChild(container1);
-container1.appendChild(row1);
+// Variables
+let body, section, container, row, heading;
 
-// Attribute Setup
-article.setAttribute("class", 'py-5 bg-warning-subtle');
-container1.setAttribute('class', "container");
-row1.setAttribute('class', 'row');
+// Base
+body = document.querySelector('body');
 
+// Create Element
+section = document.createElement('section');
+container = document.createElement('div');
+row = document.createElement('div');
+heading = document.createElement('h1');
+
+
+// Append/ Making Child
+body.appendChild(section);
+section.appendChild(container);
+container.appendChild(heading);
+container.appendChild(row);
+
+
+// Set Attribute
+container.setAttribute('class', 'container');
+row.setAttribute('class', 'row');
+
+heading.innerText = `All Courses - ${courses.length}`;
 
 for(let i = 0; i < courses.length; i++){
-    row1.innerHTML +=`
-        <div class="col-md-3">
-            <div class='card my-2'>
-                <div class='card-body'>
-                    <span>${courses[i].id}</span>
-                    <h4 class='fw-light'>${courses[i].courseName}</h4>
-                    <h5 class='fs-6 text-secondary'>${courses[i].date}</h5>
-                    <hr>
-                    <div class='d-flex justify-content-between'>
-                        <p>Seats : ${(courses[i].seats > 30) ? "Seats Available" : "Filling fast"}</p>
-                        <p>₹ ${courses[i].price}</p>
-                    </div>
-                </div>
-            </div>
+   row.innerHTML +=`
+      <div class='col-md-3'>
+        <div class='card roounded-0 my-3 ${(courses[i].seats <= 20) ? 'bg-danger-subtle' : 'bg-success-subtle'}'>
+          <div class="card-body">
+            <span class='bg-primary text-light badge border-0 rounded-0 mb-2'>${courses[i].id}</span>
+            <span class='${(courses[i].seats <= 20) ? 'bg-danger' : 'bg-primary'}  badge border-0 rounded-0 mb-2'>${(courses[i].seats <= 20) ? 'Low Stock' : 'Available'}</span>
+            <h3 class='fw-light'>${courses[i].courseName}</h3>
+          </div>
         </div>
-    `;
+      </div>
+   `;
 }
