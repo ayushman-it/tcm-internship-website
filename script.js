@@ -540,195 +540,294 @@ let obj = [
 //     <p>Compile Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:</p>
 // `;
 
-const courses = [
-  {
-    id: 'CRS-101',
-    courseName: 'Full-Stack Web Development Bootcamp',
-    price: 499.00,
-    date: '2026-11-01',
-    seats: 35
-  },
-  {
-    id: 'CRS-102',
-    courseName: 'Applied Machine Learning & Deep Learning',
-    price: 599.00,
-    date: '2026-11-05',
-    seats: 25
-  },
-  {
-    id: 'CRS-103',
-    courseName: 'Data Analytics with Python & SQL',
-    price: 349.00,
-    date: '2026-11-10',
-    seats: 40
-  },
-  {
-    id: 'CRS-104',
-    courseName: 'Cloud Architecture on AWS & Azure',
-    price: 449.00,
-    date: '2026-11-12',
-    seats: 30
-  },
-  {
-    id: 'CRS-105',
-    courseName: 'UI/UX Design Systems & Prototyping',
-    price: 299.00,
-    date: '2026-11-15',
-    seats: 20
-  },
-  {
-    id: 'CRS-106',
-    courseName: 'DevOps & Kubernetes Masterclass',
-    price: 499.00,
-    date: '2026-11-18',
-    seats: 25
-  },
-  {
-    id: 'CRS-107',
-    courseName: 'Cybersecurity Fundamentals & Ethical Hacking',
-    price: 549.00,
-    date: '2026-11-20',
-    seats: 18
-  },
-  {
-    id: 'CRS-108',
-    courseName: 'Product Management: Idea to Scale',
-    price: 399.00,
-    date: '2026-11-22',
-    seats: 30
-  },
-  {
-    id: 'CRS-109',
-    courseName: 'iOS App Development with Swift',
-    price: 429.00,
-    date: '2026-11-25',
-    seats: 22
-  },
-  {
-    id: 'CRS-110',
-    courseName: 'Modern Android Development with Kotlin',
-    price: 429.00,
-    date: '2026-11-28',
-    seats: 22
-  },
-  {
-    id: 'CRS-111',
-    courseName: 'Prompt Engineering & Generative AI Systems',
-    price: 279.00,
-    date: '2026-12-01',
-    seats: 50
-  },
-  {
-    id: 'CRS-112',
-    courseName: 'Microservices Architecture with Go',
-    price: 479.00,
-    date: '2026-12-03',
-    seats: 20
-  },
-  {
-    id: 'CRS-113',
-    courseName: 'Blockchain & Smart Contract Development',
-    price: 529.00,
-    date: '2026-12-05',
-    seats: 15
-  },
-  {
-    id: 'CRS-114',
-    courseName: 'Enterprise Database Administration & Tuning',
-    price: 389.00,
-    date: '2026-12-08',
-    seats: 28
-  },
-  {
-    id: 'CRS-115',
-    courseName: 'Technical Writing & Developer Documentation',
-    price: 199.00,
-    date: '2026-12-10',
-    seats: 40
-  },
-  {
-    id: 'CRS-116',
-    courseName: 'Automated Testing & QA with Playwright',
-    price: 299.00,
-    date: '2026-12-12',
-    seats: 30
-  },
-  {
-    id: 'CRS-117',
-    courseName: 'Digital Marketing Analytics & SEO Strategy',
-    price: 249.00,
-    date: '2026-12-15',
-    seats: 45
-  },
-  {
-    id: 'CRS-118',
-    courseName: 'Embedded Systems & IoT with Rust',
-    price: 519.00,
-    date: '2026-12-18',
-    seats: 16
-  },
-  {
-    id: 'CRS-119',
-    courseName: 'Financial Modeling & Algorithmic Trading',
-    price: 649.00,
-    date: '2026-12-20',
-    seats: 20
-  },
-  {
-    id: 'CRS-120',
-    courseName: 'Natural Language Processing with Transformers',
-    price: 579.00,
-    date: '2026-12-22',
-    seats: 24
-  },
-  {
-    id: 'CRS-121',
-    courseName: 'Web Development',
-    price: 343.00,
-    date: '2026-12-22',
-    seats: 22
-  }
-];
+// const courses = [
+//   {
+//     id: 'CRS-101',
+//     courseName: 'Full-Stack Web Development Bootcamp',
+//     price: 499.00,
+//     date: '2026-11-01',
+//     seats: 35
+//   },
+//   {
+//     id: 'CRS-102',
+//     courseName: 'Applied Machine Learning & Deep Learning',
+//     price: 599.00,
+//     date: '2026-11-05',
+//     seats: 25
+//   },
+//   {
+//     id: 'CRS-103',
+//     courseName: 'Data Analytics with Python & SQL',
+//     price: 349.00,
+//     date: '2026-11-10',
+//     seats: 40
+//   },
+//   {
+//     id: 'CRS-104',
+//     courseName: 'Cloud Architecture on AWS & Azure',
+//     price: 449.00,
+//     date: '2026-11-12',
+//     seats: 30
+//   },
+//   {
+//     id: 'CRS-105',
+//     courseName: 'UI/UX Design Systems & Prototyping',
+//     price: 299.00,
+//     date: '2026-11-15',
+//     seats: 20
+//   },
+//   {
+//     id: 'CRS-106',
+//     courseName: 'DevOps & Kubernetes Masterclass',
+//     price: 499.00,
+//     date: '2026-11-18',
+//     seats: 25
+//   },
+//   {
+//     id: 'CRS-107',
+//     courseName: 'Cybersecurity Fundamentals & Ethical Hacking',
+//     price: 549.00,
+//     date: '2026-11-20',
+//     seats: 18
+//   },
+//   {
+//     id: 'CRS-108',
+//     courseName: 'Product Management: Idea to Scale',
+//     price: 399.00,
+//     date: '2026-11-22',
+//     seats: 30
+//   },
+//   {
+//     id: 'CRS-109',
+//     courseName: 'iOS App Development with Swift',
+//     price: 429.00,
+//     date: '2026-11-25',
+//     seats: 22
+//   },
+//   {
+//     id: 'CRS-110',
+//     courseName: 'Modern Android Development with Kotlin',
+//     price: 429.00,
+//     date: '2026-11-28',
+//     seats: 22
+//   },
+//   {
+//     id: 'CRS-111',
+//     courseName: 'Prompt Engineering & Generative AI Systems',
+//     price: 279.00,
+//     date: '2026-12-01',
+//     seats: 50
+//   },
+//   {
+//     id: 'CRS-112',
+//     courseName: 'Microservices Architecture with Go',
+//     price: 479.00,
+//     date: '2026-12-03',
+//     seats: 20
+//   },
+//   {
+//     id: 'CRS-113',
+//     courseName: 'Blockchain & Smart Contract Development',
+//     price: 529.00,
+//     date: '2026-12-05',
+//     seats: 15
+//   },
+//   {
+//     id: 'CRS-114',
+//     courseName: 'Enterprise Database Administration & Tuning',
+//     price: 389.00,
+//     date: '2026-12-08',
+//     seats: 28
+//   },
+//   {
+//     id: 'CRS-115',
+//     courseName: 'Technical Writing & Developer Documentation',
+//     price: 199.00,
+//     date: '2026-12-10',
+//     seats: 40
+//   },
+//   {
+//     id: 'CRS-116',
+//     courseName: 'Automated Testing & QA with Playwright',
+//     price: 299.00,
+//     date: '2026-12-12',
+//     seats: 30
+//   },
+//   {
+//     id: 'CRS-117',
+//     courseName: 'Digital Marketing Analytics & SEO Strategy',
+//     price: 249.00,
+//     date: '2026-12-15',
+//     seats: 45
+//   },
+//   {
+//     id: 'CRS-118',
+//     courseName: 'Embedded Systems & IoT with Rust',
+//     price: 519.00,
+//     date: '2026-12-18',
+//     seats: 16
+//   },
+//   {
+//     id: 'CRS-119',
+//     courseName: 'Financial Modeling & Algorithmic Trading',
+//     price: 649.00,
+//     date: '2026-12-20',
+//     seats: 20
+//   },
+//   {
+//     id: 'CRS-120',
+//     courseName: 'Natural Language Processing with Transformers',
+//     price: 579.00,
+//     date: '2026-12-22',
+//     seats: 24
+//   },
+//   {
+//     id: 'CRS-121',
+//     courseName: 'Web Development',
+//     price: 343.00,
+//     date: '2026-12-22',
+//     seats: 22
+//   }
+// ];
 
 
 // JAVASCRIPT <---------------> HTML
 
 // Variables
-let body, section, container, row, heading;
+// let body, section, container, row, heading;
 
-// Base
-body = document.querySelector('body');
+// // Base
+// body = document.querySelector('body');
 
-// Create Element
-section = document.createElement('section');
-container = document.createElement('div');
-row = document.createElement('div');
-heading = document.createElement('h1');
-
-
-// Append/ Making Child
-body.appendChild(section);
-section.appendChild(container);
-container.appendChild(heading);
-container.appendChild(row);
+// // Create Element
+// section = document.createElement('section');
+// container = document.createElement('div');
+// row = document.createElement('div');
+// heading = document.createElement('h1');
 
 
-// Set Attribute
-container.setAttribute('class', 'container');
-row.setAttribute('class', 'row');
+// // Append/ Making Child
+// body.appendChild(section);
+// section.appendChild(container);
+// container.appendChild(heading);
+// container.appendChild(row);
 
-heading.innerText = `All Courses - ${courses.length}`;
 
-for(let i = 0; i < courses.length; i++){
-   row.innerHTML +=`
-      <div class='col-md-3'>
-        <div class='card roounded-0 my-3 ${(courses[i].seats <= 20) ? 'bg-danger-subtle' : 'bg-success-subtle'}'>
-          <div class="card-body">
-            <span class='bg-primary text-light badge border-0 rounded-0 mb-2'>${courses[i].id}</span>
-            <span class='${(courses[i].seats <= 20) ? 'bg-danger' : 'bg-primary'}  badge border-0 rounded-0 mb-2'>${(courses[i].seats <= 20) ? 'Low Stock' : 'Available'}</span>
-            <h3 class='fw-light'>${courses[i].courseName}</h3>
-          </div>
-        </div>
-      </div>
-   `;
-}
+// // Set Attribute
+// container.setAttribute('class', 'container');
+// row.setAttribute('class', 'row');
+
+// heading.innerText = `All Courses - ${courses.length}`;
+
+// for(let i = 0; i < courses.length; i++){
+//    row.innerHTML +=`
+//       <div class='col-md-3'>
+//         <div class='card roounded-0 my-3 ${(courses[i].seats <= 20) ? 'bg-danger-subtle' : 'bg-success-subtle'}'>
+//           <div class="card-body">
+//             <span class='bg-primary text-light badge border-0 rounded-0 mb-2'>${courses[i].id}</span>
+//             <span class='${(courses[i].seats <= 20) ? 'bg-danger' : 'bg-primary'}  badge border-0 rounded-0 mb-2'>${(courses[i].seats <= 20) ? 'Low Stock' : 'Available'}</span>
+//             <h3 class='fw-light'>${courses[i].courseName}</h3>
+//           </div>
+//         </div>
+//       </div>
+//    `;
+// }
+
+
+// var name = "Ayushmam";
+// Simple Function
+// function ayush(){
+//   console.log("Ayushmann");
+// }
+
+// function priyanshu(){
+//   console.log("Priyanshu");
+// }
+
+// function om(){
+//   console.log("Om");
+// }
+
+// function raghav(){
+//   console.log("Raghav");
+// }
+
+
+// ayush();
+// priyanshu();
+// om();
+// raghav();
+// ayush();
+// priyanshu();
+// om();
+// raghav();
+// ayush();
+// priyanshu();
+// om();
+// raghav();
+
+
+// Nested Function
+// function calc(){
+//     console.log("---TCM Calc---");
+
+//     function add(){
+//        let x = 60;
+//        let y = 67;
+//        console.log("Add = ", x + y);
+//     }add();
+
+//     function sub(){
+//       let a = 50;
+//       let b = 10;
+//       console.log("Sub = ", a - b);
+//     }sub();
+
+// }calc();
+
+// let x = "Ayushman";
+// let y = 78;
+
+
+// Function with parameters
+
+// function calc(x, y){
+//     let total = x - y;
+//     console.log(total);
+// }
+
+// calc("ayush",4); // NaN
+// calc("5",4); // 4
+// calc(12,4);
+// calc(14,42);
+// calc(24,41);
+
+// Arrow Function
+// let fn = (x, y)=>{
+//   let total = x + y; 
+//   console.log(total);
+// };
+// fn(23, 45);
+
+// let fn = ()=> alert("hello");
+// fn();
+
+// Clauser Function
+// function parent(){
+//     let x = 67;
+//     function child(){
+//       let y = 80;
+//       function cal(){
+//         let total = x + y;{
+//           console.log(total);
+//         }
+//       }cal();
+//     }child();
+// }parent();
+
+// Instant Invoke function | Anonymous Function
+
+
+// ;(function() {
+//     console.log("Initialized!");
+// })();
