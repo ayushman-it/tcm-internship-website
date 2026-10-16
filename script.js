@@ -796,6 +796,12 @@ let obj = [
 //     console.log(total);
 // }
 
+function fname(name = "Ayushman"){
+  console.log(name);
+}
+
+fname("Rahul");
+fname("Ameer");
 // calc("ayush",4); // NaN
 // calc("5",4); // 4
 // calc(12,4);
@@ -813,17 +819,19 @@ let obj = [
 // fn();
 
 // Clauser Function
-// function parent(){
-//     let x = 67;
-//     function child(){
-//       let y = 80;
-//       function cal(){
-//         let total = x + y;{
-//           console.log(total);
-//         }
-//       }cal();
-//     }child();
-// }parent();
+function parent(){
+    let x = 67;
+    function child(){
+      let y = 80;
+      function cal(){
+        let total = x + y;{
+          console.log(total);
+        }
+        cal();
+      }
+     child() 
+    }
+}parent();
 
 // Instant Invoke function | Anonymous Function
 
