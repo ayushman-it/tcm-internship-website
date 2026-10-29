@@ -796,12 +796,12 @@ let obj = [
 //     console.log(total);
 // }
 
-function fname(name = "Ayushman"){
-  console.log(name);
-}
+// function fname(name = "Ayushman"){
+//   console.log(name);
+// }
 
-fname("Rahul");
-fname("Ameer");
+// fname("Rahul");
+// fname("Ameer");
 // calc("ayush",4); // NaN
 // calc("5",4); // 4
 // calc(12,4);
@@ -819,19 +819,19 @@ fname("Ameer");
 // fn();
 
 // Clauser Function
-function parent(){
-    let x = 67;
-    function child(){
-      let y = 80;
-      function cal(){
-        let total = x + y;{
-          console.log(total);
-        }
-        cal();
-      }
-     child() 
-    }
-}parent();
+// function parent(){
+//     let x = 67;
+//     function child(){
+//       let y = 80;
+//       function cal(){
+//         let total = x + y;{
+//           console.log(total);
+//         }
+//         cal();
+//       }
+//      child() 
+//     }
+// }parent();
 
 // Instant Invoke function | Anonymous Function
 
@@ -839,3 +839,105 @@ function parent(){
 // ;(function() {
 //     console.log("Initialized!");
 // })();
+
+// let x = 19;
+// let y = 20;
+
+// console.log(x + y);
+// console.log(x - y);
+
+// Keyword
+// function add(){
+//   let x = 30;
+//   let y = 40;
+//   let total = x + y;
+//   console.log(total);
+// }
+// add();
+
+// Nested Function
+
+// function parent(){
+//   console.log("Hie I am Parent Function");
+//     function child(){
+//       console.log("Hie I am Child Function");
+//       function megaChild(){
+//         console.log("Hie I am Mega Child Function");
+//       }megaChild()
+//     }child()
+// }
+// parent();
+
+
+// Function With Paremeter
+// function add(x, y){
+//     let addition = x + y;
+//     console.log(addition);
+// }
+
+// add(30, 40);
+// add(20, 40);
+// add(60, 40);
+
+// Arrow 
+// let fname = ()=>{
+//    console.log("Hello I am arrow function");
+// }
+// fname();
+
+// Variable function
+// let testFn = function(){
+//   console.log("Hello I am test fn");
+// }
+// testFn();
+
+// Instant Invoke Function, Anonymous Function
+// ;(function(){
+//   console.log("Hello I am Anonymous function...");
+// })();
+
+
+// Clouser Function
+
+// function parent(){
+//   let x = 90;
+//     function child(){
+//       let y = 10;
+//       function megaChild(){
+//         let total = x + y;
+//         console.log(total);
+//       }megaChild()
+//     }child()
+// }
+// parent();
+
+// let x = 10;
+
+// function test(){
+//     let x = 50;
+//     console.log(x);
+// }
+// test();
+// console.log(x);
+
+
+// Khushi 
+// 50
+
+// Vaibhav
+// 10 -- 50
+
+// Priya 
+// 50
+
+// Priyanshu
+// 
+
+// Shradhaa
+// 10 -- 50
+
+// Priyanshu Sarangpure
+// 10 -- 50
+
+// Om 
+// 10 -- 50
